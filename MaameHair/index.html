@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+		 Maame's HairCare
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+		<link href='https://fonts.googleapis.com/css?family=Tangerine|Nunito|Muli|Amaranth|Quicksand:300,500' rel='stylesheet'>
+		<script src="https://kit.fontawesome.com/7b7cff38d6.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/maamehair.css">
+		<script src="Js/maamescript.js"></script>
+	</head>
+	<body>
+	<header>
+		<div class="sticky-header">	
+				<img class="logo" alt="logo" src="img/header-logo.png">
+				<h1>Maame's HairCare</h1>
+			<div class="top-icons">
+				<i class="fas fa-shopping-cart"></i>
+				<i class="fas fa-phone-alt"></i>
+				<i class="fas fa-map-marker-alt"></i>
+			</div>
+		</div><br>
+		<div class="header-img-background">
+			<img class="header-img" alt="natural hair girls" src="img/natural_hair_girlss.jpg">
+		</div>
+
+		<nav>
+			<ul class= "navigation">
+				<li class="nav"><a href="blog.html" target="_blank">Blog</a></li>
+				<li class="nav"><a href="about-us.html" target="_blank">About Us</a></li>				
+				<li class="nav"><a href="shop.html" target="_blank">Shop</a></li>
+				<li class="dropdown">
+					<a href="services.html" class="dropbtn" target="_blank">Services</a>
+					<div class="dropdown-content">
+						<a href="#consultation">Book Hair Consultation</a>
+						<a href="#homeservice">Book Homeservice</a>
+						<a href="#salon">Salon and Spa</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="products.html" class="dropbtn" target="_blank">Products</a>
+					<div class="dropdown-content">
+						<a href="#shampoo">Moisturizing Shampoo</a>
+						<a href="#conditioner">Detangling Conditioner</a>
+						<a href="#shampoo">Leave-In Coditioner</a>
+						<a href="#shampoo">Shear Butter</a>
+						<a href="#shampoo">Anti-itch Spray</a>
+					</div>
+				</li>
+				<li class="nav"><a class="active" href="index.html">Home</a></li>
+			</ul>
+		</nav>
+		
+		<div class="icon-div"><i id="icon" class="fas fa-bars" onclick="openMenu()"></i></div>
+		<div id="modal">
+			<div class="mobile-menu"><span class="menu-close-btn" onclick="closeMenu()">&times;</span>
+				<ul id="openmenu" class= "navigation1">
+        			<li class="nav1"><a class="mobile-menu-link" href="index.html">Home</a></li>
+        			<li class="nav1"><a class="mobile-menu-link" href="products.html" target="_blank">Products</a></li>
+        			<li class="nav1"><a class="mobile-menu-link" href="services.html" target="_blank">Services</a></li>
+        			<li class="nav1"><a class="mobile-menu-link" href="shop.html" target="_blank">Shop</a></li>
+       				<li class="nav1"><a class="mobile-menu-link" href="about-us.html" target="_blank">About Us</a></li>		
+				<li class="nav1"><a class="mobile-menu-link" href="blog.html" target="_blank">Blog</a></li>
+      				</ul>	
+			</div>
+		</div>
+	</header>
+
+	<br><br><br><br><br><br><br><br>
+
+			
+		<main>
+			<section id="shop-area" class="shop-area">
+				<h2>Featured Products</h2>
+				<div class="shop-container">
+					<figure class="products-grid-item">
+						<a href="product-page.html#product-page1"><div class="product-zoom-container"><img alt="two bottles" src="img/shampoo_conditioner.png" class="product-img"></div><br>
+						<figcaption>
+						<p class="product-name">Shampoo &amp; Conditioner Combo</p><p class="product-price">GH&#162; 55</p>
+						</figcaption></a>
+					</figure>
+					<figure class="products-grid-item">
+						<div class="product-zoom-container"><img alt="two bottles" src="img/leave-in_anti-itch.png" class="product-img"></div><br>
+						<figcaption>
+						<p class="product-name">Shampoo, Conditioner &amp; Leave-in Combo</p><p class="product-price">GH&#162; 78</p>
+						</figcaption>
+					</figure>
+					<figure class="products-grid-item">
+						<div class="product-zoom-container"><img alt="two bottles" src="img/shampoo_conditioner_leave-in.png" class="product-img"></div><br>
+						<figcaption>
+						<p class="product-name">Leave-in &amp; Anti-itch Combo</p><p class="product-price">GH&#162; 45</p>
+						</figcaption>
+					</figure>
+					<figure class="products-grid-item">
+						<div class="product-zoom-container"><img alt="two bottles" src="img/leave-in_sheabutter.png" class="product-img"></div><br>
+						<figcaption>
+						<p class="product-name">Leave-in &amp; Shea Butter Combo</p><p class="product-price">GH&#162; 45</p>
+						</figcaption>
+					</figure>
+					<figure class="products-grid-item">
+						<div class="product-zoom-container"><img alt="two bottles" src="img/all_purpose_set.png" class="product-img"></div><br>
+						<figcaption>
+						<p class="product-name">All Purpose Set</p><p class="product-price">GH&#162; 125</p>
+						</figcaption>
+					</figure>
+				</div>
+
+			</section>
+
+	<br><br><br><br>
+	<hr>
+	<br><br><br><br>
+			<section>
+				<h2>Services</h2>
+				<div id="consultation" class="services-container">
+					<div class="services-img-container">
+						<img alt="two women" src="img/consultation-img.jpg" class="services-img">
+						<div><button onclick="bookConsultation()">Book a Consultation</button></div>
+					</div>
+					<div class="services-img-container">
+						<img alt="two women" src="img/homeservice-img.jpg" class="services-img">
+						<div><button onclick="bookHomeService()">Book Home Service</button></div>
+					</div>
+					<div class="services-img-container">
+						<img alt="two women" src="img/salon-img.webp" class="services-img">
+						<div><button onclick="salonSpa()">Salon &amp; Spa</button></div>
+					</div>
+				</div>
+			</section>
+		
+	<br><br><br><br>
+	<hr>
+	<br><br><br><br>
+
+			<section>
+				<h2>Maame's Blog</h2>
+				<div class="home-blog">
+					<div class="blog-shortcut">
+						<h4>Protective Styles For Summer 2021</h4>
+						<h6>28th June, 2021</h6>
+						<p>Summer 2021 is almost here and as a natural hair person I love to keep my hair safe and protected 
+						not just for the summer but for any kind of weather. The summer is a good time to have fun and 
+						connect with a lot of people and we sure want you to...<a href="#">read more</a></p>
+					</div>
+
+					<div class="blog-shortcut">
+						<h4>Top 5 Natural Hair Product Must Haves</h4>
+						<h6>23rd April, 2021</h6>
+						<p>If you are new to the natural hair community, this blog is for you! Maybe you are wondering where to start after your big chop, 
+						where to get quality and affordable products and the kind of products you should use in order to have healthy growing hair. 
+						Taking care of your natural hair is like...<a href="#">read more</a></p>
+					</div>
+
+					<div class="blog-shortcut">
+						<h4>Here’s How to Quickly Style Your Natural Hair for Work</h4>
+						<h6>25th May, 2021</h6>
+						<p>Getting ready for work could qualify as one of the top ten most painful parts of adulthood. 
+						Unless you’re extremely passionate about work, and even with that getting up from bed in the morning is still a little bit hard. 
+						I personally would rather throw a wig on in the mornings instead of...<a href="#">read more</a></p>
+					</div>
+				</div>
+
+			</section>
+		</main>
+		<form id="form-container">	
+			<div class="popup-form">
+				<span class="form-close-btn" onclick="closeConsultation()">&times;</span>
+				<h2>Book A consultation</h2>
+				<div  class="registration-form">
+					<label for="firstname">First Name<span class="required-symbol">*</span><br><input type="text" id="firstname" name="firstname" class="formbox" required/></label>
+					<label for="lastname">Last Name<span class="required-symbol">*</span><br><input type="text" id="lastname" name="lastname" class="formbox" required/></label>
+					<label for="email">Email<span class="required-symbol">*</span><br><input type="email" id="email" name="email" class="formbox" required/></label>
+					<label for="phone">Phone<span class="required-symbol">*</span><br><input type="tel" id="phone" name="phone" class="formbox" required/></label>
+				<label for="date" class="date">Pick a date<span>*</span><br><input type="date" id="date" name="date" class="formbox" required></label><br><br>	
+				<fieldset id="hair-issues">
+					<legend>Please select your hair issue</legend>
+					<label for="beginner"><input type="radio" id = "beginner" name="hairissues" class="form-radio" checked="checked"><span>Beginner</span></label>
+					<label for="dryscalp"><input type="radio" id = "dryscalp" name="hairissues" class="form-radio"><span>Dry/Itchy Scalp</span></label>
+					<label for="hairloss"><input type="radio" id = "hairloss" name="hairissues" class="form-radio"><span>Hair Loss/Breakage</span></label>
+					<label for="stunted"><input type="radio" id = "stunted" name="hairissues" class="form-radio"><span>Stunted Growth</span></label>
+					<label for="other"><input type="radio" id = "other" name="hairissues" class="form-radio"><span>Other</span></label><br>
+				</fieldset>
+				</div>
+				<div><button type="submit" name="submit" id="submit">Book A Consultation</button></div>
+			</div>
+
+		</form>
+	
+		<form id="form2-container">	
+			<div class="popup-form">
+				<span class="form-close-btn" onclick="closeHomeService()">&times;</span>
+				<h2>Book Home Service</h2>
+				<div  class="registration-form">
+					<label for="firstname2">First Name<span class="required-symbol">*</span><br><input type="text" id="firstname2" name="firstname" class="formbox" required/></label>
+					<label for="lastname2">Last Name<span class="required-symbol">*</span><br><input type="text" id="lastname2" name="lastname" class="formbox" required/></label>
+					<label for="email2">Email<span class="required-symbol">*</span><br><input type="email" id="email2" name="email" class="formbox" required/></label>
+					<label for="phone2">Phone<span class="required-symbol">*</span><br><input type="tel" id="phone2" name="phone" class="formbox" required/></label>
+				</div>
+				<label for="date2" class="date">Pick a date<span>*</span><br><input type="date" id="date2" name="date" class="formbox" required></label><br><br>	
+				<fieldset id="hair-styles">
+					<legend>Please select your hair style<a href="#" id="pricelist"> (Price List)</a></legend>
+					<label for="boxbraids3"><input type="radio" id = "boxbraids3" name="hairstyles" class="form-radio" checked="checked"><span>3 Strand Box braids(Standard-16")</span></label>
+					<label for="boxbraids3long"><input type="radio" id = "boxbraids3long" name="hairstyles" class="form-radio"><span>2 Strand Box braids(Long-26")</span></label>	
+					<label for="boxbraids2"><input type="radio" id = "boxbraids2" name="hairstyles" class="form-radio"><span>Box Braids(Standard-16")</span></label>
+					<label for="boxbraids2long"><input type="radio" id = "boxbraids2long" name="hairstyles" class="form-radio"><span>Box Braids(Long-26")</span></label>
+					<label for="knotlessbraids"><input type="radio" id = "knotlessbraids" name="hairstyles" class="form-radio"><span>Knotless Braids(Standard-16")</span></label>
+					<label for="knotlessbraidslong"><input type="radio" id = "knotlessbraidslong" name="hairstyles" class="form-radio"><span>Knotless Braids(Long-26")</span></label>
+					<label for="passiontwists"><input type="radio" id = "passiontwists" name="hairstyles" class="form-radio"><span>Passion Twists(Standard-16")</span></label>
+					<label for="passiontwistslong"><input type="radio" id = "passiontwistslong" name="hairstyles" class="form-radio"><span>Passion Twists(Long-26")</span></label>
+				</fieldset>
+	
+				<div><button type="submit" name="submit" id="submit2">Book Home Service</button></div>
+			</div>
+
+		</form>
+	<br><br><br><br>
+	
+	
+	<footer>
+		<div class="footer">
+			<div class="footer-item">
+				<h5>Quick Links</h5>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="faq.html" target="_blank">FAQ</a></li>
+				</ul>
+			</div>
+			<div class="footer-item">
+				<h5>Legal</h5>
+				<ul>
+					<li><a href="#">Terms of Service</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Shipping Policy</a></li>
+					<li><a href="#">Return Policy</a></li>
+				</ul>
+			</div>
+			<div class="footer-item">
+				<h5>Contact Us</h5>
+				<ul>
+					<li><a href="mailto:info@mhaircare.com"><i class="far fa-envelope"></i>&nbsp;<span>info@mhaircare.com</span></a></li>
+					<li><a href="tel:0547091765"><i class="fas fa-phone-alt"></i>&nbsp;<span>0547091765</span></a></li>
+				</ul>
+			</div>
+			<div class="footer-item">
+				<h5>Stay Updated</h5>
+				<p>Be the first to receive news on promotions, new products, tips and sales.</p>
+				<form class="email-subscription">
+				<input type="email" placeholder="Email Address" class="email-subscription-box">
+				</form>
+				<button onclick="signUp()">Sign Up</button>
+				<div class="footer-social-media">
+					<a href="https://twittter.com/knotties_"><i class="fab fa-twitter footer-icon"></i></a>
+					<a href="https://instagram.com/knotties_"><i class="fab fa-instagram footer-icon"></i></a>
+					<a href="https://facebook.com/Knotties-by-Maame"><i class="fab fa-facebook footer-icon"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-item-payment-methods">
+			<img alt="payment methods" src="img/payment-methods.png">
+		</div>
+		<div class="footer-item-copyright">
+			<p class="copyright">All Rights Reserved &middot; Copyright &#169; 2021 Maame's HairCare</p>
+		</div>
+		</div>
+
+	</footer>
+	</body>
+
+
+</html>
